@@ -13,10 +13,10 @@ mongoose.connect(config.uri, (err) => {
     }
 });
 
-app.use(express.static('/Users/dwightshrute/Documents/travelleads/frontend/dist'));
+app.use(express.static('/Users/dwightshrute/Documents/travelleads/ngfrontend/dist'));
 
 app.get('*', (req, res) => {
-    res.sendFile('/Users/dwightshrute/Documents/travelleads/frontend/dist/index.html');
+    res.sendFile('/Users/dwightshrute/Documents/travelleads/ngfrontend/dist/index.html');
   });
   
 
